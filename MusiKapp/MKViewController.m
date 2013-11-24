@@ -7,16 +7,18 @@
 //
 
 #import "MKViewController.h"
+#import "MKUISearchBarHelper.h"
 
 @interface MKViewController ()
 
 @end
 
 @implementation MKViewController
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self delegateSearchBar];
+    searchBar.delegate = self;
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -24,6 +26,19 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)searchArtist{
+    
+}
+
+-(void)delegateSearchBar{
+    searchBar = [MKUISearchBarHelper alloc];
+    _sbSearchArtist.delegate = searchBar;
+}
+
+-(void)searchedText:(NSString*)text{
+    NSLog(@"%@", text);
 }
 
 @end

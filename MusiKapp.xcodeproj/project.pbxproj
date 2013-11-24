@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0527651842A7FD00D633D8 /* MKAlbums.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0527641842A7FD00D633D8 /* MKAlbums.m */; };
+		BA23BF551842A31C0042A144 /* MKArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF541842A31C0042A144 /* MKArtist.m */; };
+		BA23BF581842A38D0042A144 /* MKRank.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF571842A38D0042A144 /* MKRank.m */; };
+		BA23BF5B1842A3E90042A144 /* MKGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF5A1842A3E90042A144 /* MKGenre.m */; };
+		BA23BF611842A4390042A144 /* MKTopLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF601842A4390042A144 /* MKTopLyrics.m */; };
+		BA23BF641842A45A0042A144 /* MKItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF631842A45A0042A144 /* MKItem.m */; };
 		BA9CFAD11840E56600B12540 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9CFAD01840E56600B12540 /* Foundation.framework */; };
 		BA9CFAD31840E56600B12540 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9CFAD21840E56600B12540 /* CoreGraphics.framework */; };
 		BA9CFAD51840E56600B12540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9CFAD41840E56600B12540 /* UIKit.framework */; };
@@ -21,6 +27,7 @@
 		BA9CFAF21840E56600B12540 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA9CFAD41840E56600B12540 /* UIKit.framework */; };
 		BA9CFAFA1840E56600B12540 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BA9CFAF81840E56600B12540 /* InfoPlist.strings */; };
 		BA9CFAFC1840E56600B12540 /* MusiKappTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9CFAFB1840E56600B12540 /* MusiKappTests.m */; };
+		BA9CFB071840F05000B12540 /* MKUISearchBarHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA9CFB061840F05000B12540 /* MKUISearchBarHelper.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +41,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA0527631842A7FD00D633D8 /* MKAlbums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAlbums.h; sourceTree = "<group>"; };
+		BA0527641842A7FD00D633D8 /* MKAlbums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAlbums.m; sourceTree = "<group>"; };
+		BA23BF5018429EC30042A144 /* MKRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKRepository.h; sourceTree = "<group>"; };
+		BA23BF531842A31C0042A144 /* MKArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKArtist.h; sourceTree = "<group>"; };
+		BA23BF541842A31C0042A144 /* MKArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKArtist.m; sourceTree = "<group>"; };
+		BA23BF561842A38D0042A144 /* MKRank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRank.h; sourceTree = "<group>"; };
+		BA23BF571842A38D0042A144 /* MKRank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRank.m; sourceTree = "<group>"; };
+		BA23BF591842A3E90042A144 /* MKGenre.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKGenre.h; sourceTree = "<group>"; };
+		BA23BF5A1842A3E90042A144 /* MKGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKGenre.m; sourceTree = "<group>"; };
+		BA23BF5F1842A4390042A144 /* MKTopLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTopLyrics.h; sourceTree = "<group>"; };
+		BA23BF601842A4390042A144 /* MKTopLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTopLyrics.m; sourceTree = "<group>"; };
+		BA23BF621842A45A0042A144 /* MKItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKItem.h; sourceTree = "<group>"; };
+		BA23BF631842A45A0042A144 /* MKItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKItem.m; sourceTree = "<group>"; };
 		BA9CFACD1840E56600B12540 /* MusiKapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MusiKapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA9CFAD01840E56600B12540 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		BA9CFAD21840E56600B12540 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +73,8 @@
 		BA9CFAF71840E56600B12540 /* MusiKappTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MusiKappTests-Info.plist"; sourceTree = "<group>"; };
 		BA9CFAF91840E56600B12540 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BA9CFAFB1840E56600B12540 /* MusiKappTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusiKappTests.m; sourceTree = "<group>"; };
+		BA9CFB051840F05000B12540 /* MKUISearchBarHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKUISearchBarHelper.h; sourceTree = "<group>"; };
+		BA9CFB061840F05000B12540 /* MKUISearchBarHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKUISearchBarHelper.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +101,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA23BF4F18429EAA0042A144 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				BA23BF5018429EC30042A144 /* MKRepository.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		BA23BF521842A2D00042A144 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BA23BF531842A31C0042A144 /* MKArtist.h */,
+				BA23BF541842A31C0042A144 /* MKArtist.m */,
+				BA23BF561842A38D0042A144 /* MKRank.h */,
+				BA23BF571842A38D0042A144 /* MKRank.m */,
+				BA23BF591842A3E90042A144 /* MKGenre.h */,
+				BA23BF5A1842A3E90042A144 /* MKGenre.m */,
+				BA23BF5F1842A4390042A144 /* MKTopLyrics.h */,
+				BA23BF601842A4390042A144 /* MKTopLyrics.m */,
+				BA23BF621842A45A0042A144 /* MKItem.h */,
+				BA23BF631842A45A0042A144 /* MKItem.m */,
+				BA0527631842A7FD00D633D8 /* MKAlbums.h */,
+				BA0527641842A7FD00D633D8 /* MKAlbums.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		BA9CFAC41840E56600B12540 = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +161,9 @@
 		BA9CFAD61840E56600B12540 /* MusiKapp */ = {
 			isa = PBXGroup;
 			children = (
+				BA23BF521842A2D00042A144 /* Models */,
+				BA23BF4F18429EAA0042A144 /* Protocols */,
+				BA9CFB081840F05A00B12540 /* Helpers */,
 				BA9CFADF1840E56600B12540 /* MKAppDelegate.h */,
 				BA9CFAE01840E56600B12540 /* MKAppDelegate.m */,
 				BA9CFAE21840E56600B12540 /* Main.storyboard */,
@@ -150,6 +202,15 @@
 				BA9CFAF81840E56600B12540 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA9CFB081840F05A00B12540 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BA9CFB051840F05000B12540 /* MKUISearchBarHelper.h */,
+				BA9CFB061840F05000B12540 /* MKUISearchBarHelper.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,8 +312,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA9CFAE11840E56600B12540 /* MKAppDelegate.m in Sources */,
+				BA9CFB071840F05000B12540 /* MKUISearchBarHelper.m in Sources */,
+				BA23BF551842A31C0042A144 /* MKArtist.m in Sources */,
+				BA23BF5B1842A3E90042A144 /* MKGenre.m in Sources */,
+				BA23BF641842A45A0042A144 /* MKItem.m in Sources */,
 				BA9CFAE71840E56600B12540 /* MKViewController.m in Sources */,
 				BA9CFADD1840E56600B12540 /* main.m in Sources */,
+				BA0527651842A7FD00D633D8 /* MKAlbums.m in Sources */,
+				BA23BF611842A4390042A144 /* MKTopLyrics.m in Sources */,
+				BA23BF581842A38D0042A144 /* MKRank.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +529,7 @@
 				BA9CFB011840E56600B12540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA9CFB021840E56600B12540 /* Build configuration list for PBXNativeTarget "MusiKappTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +538,7 @@
 				BA9CFB041840E56600B12540 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

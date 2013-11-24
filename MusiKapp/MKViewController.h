@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MKUISearchBarHelper.h"
 
-@interface MKViewController : UIViewController
-
+@interface MKViewController : UIViewController<MKUISearchBarHelperDelegate>{
+    MKUISearchBarHelper *searchBar;
+}
+-(void)searchArtist;
+@property (strong, nonatomic) IBOutlet UISearchBar *sbSearchArtist;
 @end
