@@ -8,6 +8,7 @@
 
 #import "MKViewController.h"
 #import "MKUISearchBarHelper.h"
+#import "MKArtist.h"
 
 @interface MKViewController ()
 
@@ -19,6 +20,7 @@
     [super viewDidLoad];
     [self delegateSearchBar];
     searchBar.delegate = self;
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
@@ -33,7 +35,8 @@
 }
 
 -(void)delegateSearchBar{
-    searchBar = [MKUISearchBarHelper alloc];
+    MKArtist *artist = [MKArtist alloc];
+    searchBar = [[MKUISearchBarHelper alloc] initWithRepository:artist];    
     _sbSearchArtist.delegate = searchBar;
 }
 

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MKUISearchBarHelper.h"
+#import "MKArtist.h"
+
 
 @interface MKViewController : UIViewController<MKUISearchBarHelperDelegate>{
     MKUISearchBarHelper *searchBar;

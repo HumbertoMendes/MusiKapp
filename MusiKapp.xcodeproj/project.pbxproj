@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		BA0527651842A7FD00D633D8 /* MKAlbums.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0527641842A7FD00D633D8 /* MKAlbums.m */; };
+		BA0527681842B32100D633D8 /* MKJsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0527671842B32100D633D8 /* MKJsonHelper.m */; };
 		BA23BF551842A31C0042A144 /* MKArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF541842A31C0042A144 /* MKArtist.m */; };
 		BA23BF581842A38D0042A144 /* MKRank.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF571842A38D0042A144 /* MKRank.m */; };
 		BA23BF5B1842A3E90042A144 /* MKGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF5A1842A3E90042A144 /* MKGenre.m */; };
@@ -43,6 +44,8 @@
 /* Begin PBXFileReference section */
 		BA0527631842A7FD00D633D8 /* MKAlbums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKAlbums.h; sourceTree = "<group>"; };
 		BA0527641842A7FD00D633D8 /* MKAlbums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAlbums.m; sourceTree = "<group>"; };
+		BA0527661842B32100D633D8 /* MKJsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJsonHelper.h; sourceTree = "<group>"; };
+		BA0527671842B32100D633D8 /* MKJsonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJsonHelper.m; sourceTree = "<group>"; };
 		BA23BF5018429EC30042A144 /* MKRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKRepository.h; sourceTree = "<group>"; };
 		BA23BF531842A31C0042A144 /* MKArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKArtist.h; sourceTree = "<group>"; };
 		BA23BF541842A31C0042A144 /* MKArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKArtist.m; sourceTree = "<group>"; };
@@ -207,6 +210,8 @@
 		BA9CFB081840F05A00B12540 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BA0527661842B32100D633D8 /* MKJsonHelper.h */,
+				BA0527671842B32100D633D8 /* MKJsonHelper.m */,
 				BA9CFB051840F05000B12540 /* MKUISearchBarHelper.h */,
 				BA9CFB061840F05000B12540 /* MKUISearchBarHelper.m */,
 			);
@@ -311,6 +316,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA0527681842B32100D633D8 /* MKJsonHelper.m in Sources */,
 				BA9CFAE11840E56600B12540 /* MKAppDelegate.m in Sources */,
 				BA9CFB071840F05000B12540 /* MKUISearchBarHelper.m in Sources */,
 				BA23BF551842A31C0042A144 /* MKArtist.m in Sources */,

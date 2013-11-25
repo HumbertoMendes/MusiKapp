@@ -17,6 +17,7 @@
     id<MKRepository> repository;
 }
 
+-(id)initWithRepository:(id<MKRepository>) initRepository;
 @property(nonatomic,assign)id<MKUISearchBarHelperDelegate> delegate;
 
 @end

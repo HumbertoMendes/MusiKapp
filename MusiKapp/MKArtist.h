@@ -11,8 +11,9 @@
 #import "MKGenre.h"
 #import "MKTopLyrics.h"
 #import "MKAlbums.h"
+#import "MKRepository.h"
 
-@interface MKArtist : NSObject
+@interface MKArtist : NSObject<MKRepository>
 @property NSString* id;
 @property NSString* desc;
 @property NSString* url;

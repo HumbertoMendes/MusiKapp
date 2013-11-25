@@ -20,10 +20,10 @@
 }
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    [repository searchRepository:searchBar.text];
     //NSLog(@"%@", searchBar.text);
     if([delegate respondsToSelector:@selector(searchedText:)])
     {
+        [repository searchRepository:searchBar.text];
         [delegate searchedText:searchBar.text];
     }
 };
