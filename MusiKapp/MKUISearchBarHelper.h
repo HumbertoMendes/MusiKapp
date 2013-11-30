@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MKModelData.h"
 @protocol MKUISearchBarHelperDelegate<NSObject>
--(void)searchedText:(NSArray*)text;
+-(void)returnedData:(NSArray*)text;
 @end
 
 @interface MKUISearchBarHelper : NSObject<UISearchBarDelegate>{

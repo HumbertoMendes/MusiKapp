@@ -20,12 +20,15 @@
 }
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    if([delegate respondsToSelector:@selector(searchedText:)])
+    if([delegate respondsToSelector:@selector(returnedData	:)])
     {
-        NSArray *retornoArray = [repository searchRepository:searchBar.text];
-        [delegate searchedText:retornoArray];
+        [self performSelectorInBackground:@selector(searchForData:) withObject:searchBar.text];
     }
 };
 
+-(void)searchForData:(NSString*)text{
+    NSArray *arrayReturn = [repository searchRepository:text];
+    [delegate returnedData:arrayReturn];
+}
 
 @end

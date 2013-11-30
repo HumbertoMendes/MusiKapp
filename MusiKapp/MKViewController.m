@@ -40,13 +40,15 @@
     _sbSearchArtist.delegate = searchBar;
 }
 
--(void)searchedText:(NSArray*)artists{
+-(void)returnedData:(NSArray*)artists{
     if(artists != nil){
-        //artists = (MKArtist*) artists;
-        for(MKArtist *artist in artists) {
+        /*for(MKArtist *artist in artists) {
             NSLog(@"%@", artist.name);
             NSLog(@"%@", artist.url);
-        }
+        }*/
+        MKArtist *artist = (MKArtist*) [artists objectAtIndex:0];
+        NSLog(@"%@", artist.name);
+        NSLog(@"%@", artist.url);
     }else{
         NSLog(@"Artista não encontrado");
     }

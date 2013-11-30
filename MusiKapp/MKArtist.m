@@ -25,11 +25,14 @@
 
 -(NSArray*)searchRepository:(NSString *)text{
     //http://www.vagalume.com.br/u2/index.js
-    text = [MKJsonLib formatParameterForUrl:text];
-    NSString *stringUrl = [NSString stringWithFormat:@"http://www.vagalume.com.br/api/search.php?art=%@&extra=artpic", text];
-    NSArray *artists = [MKJsonHelper searchRepository:stringUrl andKey:@"art"];
-    
+    NSArray *artists = [self searchForArtists:text];
     return [self populateArtists:artists];
+}
+
+-(NSArray*)searchForArtists:(NSString*)artistName{
+    artistName = [MKJsonLib formatParameterForUrl:artistName];
+    NSString *stringUrl = [NSString stringWithFormat:@"http://www.vagalume.com.br/api/search.php?art=%@&extra=artpic", artistName];
+    return [MKJsonHelper searchRepository:stringUrl andKey:@"art"];
 }
 
 -(NSArray*)populateArtists:(NSArray*)artists{
