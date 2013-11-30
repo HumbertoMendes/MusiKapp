@@ -8,6 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MKRepository <NSObject>
--(NSObject*)searchRepository:(NSString*)text;
+@protocol MKModelData <NSObject>
+-(NSArray*)searchRepository:(NSString*)text;
 @end

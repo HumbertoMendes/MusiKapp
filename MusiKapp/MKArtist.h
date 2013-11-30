@@ -11,10 +11,11 @@
 #import "MKGenre.h"
 #import "MKTopLyrics.h"
 #import "MKAlbums.h"
-#import "MKRepository.h"
+#import "MKModelData.h"
 
-@interface MKArtist : NSObject<MKRepository>
+@interface MKArtist : NSObject<MKModelData>
 @property NSString* id;
+@property NSString* name;
 @property NSString* desc;
 @property NSString* url;
 @property NSString* pic_small;

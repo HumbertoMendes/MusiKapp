@@ -8,9 +8,11 @@
 
 #import "MKArtist.h"
 #import "MKJsonHelper.h"
+#import "MKJsonLib.h"
 
 @implementation MKArtist
 @synthesize id;
+@synthesize name;
 @synthesize desc;
 @synthesize url;
 @synthesize pic_small;
@@ -21,26 +23,29 @@
 @synthesize topLyrics;
 @synthesize albums;
 
--(NSObject*)searchRepository:(NSString *)text{
+-(NSArray*)searchRepository:(NSString *)text{
     //http://www.vagalume.com.br/u2/index.js
-    NSString *stringUrl = [NSString stringWithFormat:@"http://www.vagalume.com.br/api/search.php?art=%@", text];
+    text = [MKJsonLib formatParameterForUrl:text];
+    NSString *stringUrl = [NSString stringWithFormat:@"http://www.vagalume.com.br/api/search.php?art=%@&extra=artpic", text];
     NSArray *artists = [MKJsonHelper searchRepository:stringUrl andKey:@"art"];
-    //NSString *stringUrl = [NSString stringWithFormat:@"http://services.sandbox.encomendaz.net/tracking.json?id=%@", @"RA705639681BR"];
-    //NSArray *monitoramentosJSON = [respostaJSON objectForKey:key];
-    //NSArray *artists = [MKJsonHelper searchRepository:stringUrl andKey:@"data"];
-    MKArtist *artist = [[MKArtist alloc] init];
-    NSMutableArray *arrArtists = [[NSMutableArray alloc] init];
     
-    // Obtendo cada um dos monitoramentos retornados e preenchendo o array.
-    for(NSDictionary *art in artists) {
-        artist.id = [art objectForKey:@"id"];
-        artist.desc = [art objectForKey:@"date"];
-        artist.url = [art objectForKey:@"state"];
-        artist.pic_small = [art objectForKey:@"status"];
-        artist.pic_medium = [art objectForKey:@"description"];
-        //rastreio.resultado = [NSString stringWithFormat:@"Data: %@  - Cidade: %@ - Estado: %@ - Descrição: %@ - Status: %@", rastreio.date, rastreio.city, rastreio.state, rastreio.description, rastreio.status];
-        
-        [arrArtists addObject:artist];
+    return [self populateArtists:artists];
+}
+
+-(NSArray*)populateArtists:(NSArray*)artists{
+    NSMutableArray *arrArtists = nil;
+    if(artists != nil){
+        MKArtist *artist = [[MKArtist alloc] init];
+        arrArtists = [[NSMutableArray alloc] init];
+        // Obtendo cada um dos monitoramentos retornados e preenchendo o array.
+        for(NSDictionary *art in artists) {
+            artist.id = [art objectForKey:@"id"];
+            artist.name = [art objectForKey:@"name"];
+            artist.url = [art objectForKey:@"url"];
+            artist.pic_small = [art objectForKey:@"pic_small"];
+            artist.pic_medium = [art objectForKey:@"pic_medium"];
+            [arrArtists addObject:artist];
+        }
     }
     return arrArtists;
 }

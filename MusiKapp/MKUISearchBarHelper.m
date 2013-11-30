@@ -7,12 +7,12 @@
 //
 
 #import "MKUISearchBarHelper.h"
-#import "MKRepository.h"
+#import "MKModelData.h"
 
 @implementation MKUISearchBarHelper
 @synthesize delegate;
 
--(id)initWithRepository:(id<MKRepository>) initRepository{
+-(id)initWithRepository:(id<MKModelData>) initRepository{
     if(self=[super init]){
         repository = initRepository;
     }
@@ -20,11 +20,10 @@
 }
 
 -(void)searchBarSearchButtonClicked:(UISearchBar *)searchBar{
-    //NSLog(@"%@", searchBar.text);
     if([delegate respondsToSelector:@selector(searchedText:)])
     {
-        [repository searchRepository:searchBar.text];
-        [delegate searchedText:searchBar.text];
+        NSArray *retornoArray = [repository searchRepository:searchBar.text];
+        [delegate searchedText:retornoArray];
     }
 };
 

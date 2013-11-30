@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BA0527651842A7FD00D633D8 /* MKAlbums.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0527641842A7FD00D633D8 /* MKAlbums.m */; };
 		BA0527681842B32100D633D8 /* MKJsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0527671842B32100D633D8 /* MKJsonHelper.m */; };
+		BA074AF0184A2A5D00E2C433 /* MKJsonLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BA074AEF184A2A5D00E2C433 /* MKJsonLib.m */; };
 		BA23BF551842A31C0042A144 /* MKArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF541842A31C0042A144 /* MKArtist.m */; };
 		BA23BF581842A38D0042A144 /* MKRank.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF571842A38D0042A144 /* MKRank.m */; };
 		BA23BF5B1842A3E90042A144 /* MKGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF5A1842A3E90042A144 /* MKGenre.m */; };
@@ -46,7 +47,9 @@
 		BA0527641842A7FD00D633D8 /* MKAlbums.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKAlbums.m; sourceTree = "<group>"; };
 		BA0527661842B32100D633D8 /* MKJsonHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJsonHelper.h; sourceTree = "<group>"; };
 		BA0527671842B32100D633D8 /* MKJsonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJsonHelper.m; sourceTree = "<group>"; };
-		BA23BF5018429EC30042A144 /* MKRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKRepository.h; sourceTree = "<group>"; };
+		BA074AEE184A2A5D00E2C433 /* MKJsonLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJsonLib.h; sourceTree = "<group>"; };
+		BA074AEF184A2A5D00E2C433 /* MKJsonLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJsonLib.m; sourceTree = "<group>"; };
+		BA23BF5018429EC30042A144 /* MKModelData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKModelData.h; sourceTree = "<group>"; };
 		BA23BF531842A31C0042A144 /* MKArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKArtist.h; sourceTree = "<group>"; };
 		BA23BF541842A31C0042A144 /* MKArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKArtist.m; sourceTree = "<group>"; };
 		BA23BF561842A38D0042A144 /* MKRank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRank.h; sourceTree = "<group>"; };
@@ -104,10 +107,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA074AED184A2A3C00E2C433 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				BA074AEE184A2A5D00E2C433 /* MKJsonLib.h */,
+				BA074AEF184A2A5D00E2C433 /* MKJsonLib.m */,
+			);
+			name = Libs;
+			sourceTree = "<group>";
+		};
 		BA23BF4F18429EAA0042A144 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				BA23BF5018429EC30042A144 /* MKRepository.h */,
+				BA23BF5018429EC30042A144 /* MKModelData.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -164,6 +176,7 @@
 		BA9CFAD61840E56600B12540 /* MusiKapp */ = {
 			isa = PBXGroup;
 			children = (
+				BA074AED184A2A3C00E2C433 /* Libs */,
 				BA23BF521842A2D00042A144 /* Models */,
 				BA23BF4F18429EAA0042A144 /* Protocols */,
 				BA9CFB081840F05A00B12540 /* Helpers */,
@@ -319,6 +332,7 @@
 				BA0527681842B32100D633D8 /* MKJsonHelper.m in Sources */,
 				BA9CFAE11840E56600B12540 /* MKAppDelegate.m in Sources */,
 				BA9CFB071840F05000B12540 /* MKUISearchBarHelper.m in Sources */,
+				BA074AF0184A2A5D00E2C433 /* MKJsonLib.m in Sources */,
 				BA23BF551842A31C0042A144 /* MKArtist.m in Sources */,
 				BA23BF5B1842A3E90042A144 /* MKGenre.m in Sources */,
 				BA23BF641842A45A0042A144 /* MKItem.m in Sources */,

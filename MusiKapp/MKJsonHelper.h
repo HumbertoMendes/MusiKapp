@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MKRepository.h"
 
 @interface MKJsonHelper : NSObject
 +(NSArray*)searchRepository:(NSString*)stringUrl andKey:(NSString*)key;

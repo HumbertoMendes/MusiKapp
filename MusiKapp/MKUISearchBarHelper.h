@@ -7,17 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MKRepository.h"
+#import "MKModelData.h"
 @protocol MKUISearchBarHelperDelegate<NSObject>
--(void)searchedText:(NSString*)text;
+-(void)searchedText:(NSArray*)text;
 @end
 
 @interface MKUISearchBarHelper : NSObject<UISearchBarDelegate>{
-    //id<MKUISearchBarHelperDelegate> delegate;
-    id<MKRepository> repository;
+    id<MKModelData> repository;
 }
 
--(id)initWithRepository:(id<MKRepository>) initRepository;
+-(id)initWithRepository:(id<MKModelData>) initRepository;
 @property(nonatomic,assign)id<MKUISearchBarHelperDelegate> delegate;
 
 @end
