@@ -10,6 +10,7 @@
 		BA0527651842A7FD00D633D8 /* MKAlbums.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0527641842A7FD00D633D8 /* MKAlbums.m */; };
 		BA0527681842B32100D633D8 /* MKJsonHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0527671842B32100D633D8 /* MKJsonHelper.m */; };
 		BA074AF0184A2A5D00E2C433 /* MKJsonLib.m in Sources */ = {isa = PBXBuildFile; fileRef = BA074AEF184A2A5D00E2C433 /* MKJsonLib.m */; };
+		BA0D3329184BB033003E461F /* MKUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = BA0D3328184BB033003E461F /* MKUrls.m */; };
 		BA23BF551842A31C0042A144 /* MKArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF541842A31C0042A144 /* MKArtist.m */; };
 		BA23BF581842A38D0042A144 /* MKRank.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF571842A38D0042A144 /* MKRank.m */; };
 		BA23BF5B1842A3E90042A144 /* MKGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = BA23BF5A1842A3E90042A144 /* MKGenre.m */; };
@@ -49,6 +50,8 @@
 		BA0527671842B32100D633D8 /* MKJsonHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJsonHelper.m; sourceTree = "<group>"; };
 		BA074AEE184A2A5D00E2C433 /* MKJsonLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJsonLib.h; sourceTree = "<group>"; };
 		BA074AEF184A2A5D00E2C433 /* MKJsonLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJsonLib.m; sourceTree = "<group>"; };
+		BA0D3327184BB033003E461F /* MKUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKUrls.h; sourceTree = "<group>"; };
+		BA0D3328184BB033003E461F /* MKUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKUrls.m; sourceTree = "<group>"; };
 		BA23BF5018429EC30042A144 /* MKModelData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MKModelData.h; sourceTree = "<group>"; };
 		BA23BF531842A31C0042A144 /* MKArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKArtist.h; sourceTree = "<group>"; };
 		BA23BF541842A31C0042A144 /* MKArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKArtist.m; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				BA23BF631842A45A0042A144 /* MKItem.m */,
 				BA0527631842A7FD00D633D8 /* MKAlbums.h */,
 				BA0527641842A7FD00D633D8 /* MKAlbums.m */,
+				BA0D3327184BB033003E461F /* MKUrls.h */,
+				BA0D3328184BB033003E461F /* MKUrls.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -340,6 +345,7 @@
 				BA9CFADD1840E56600B12540 /* main.m in Sources */,
 				BA0527651842A7FD00D633D8 /* MKAlbums.m in Sources */,
 				BA23BF611842A4390042A144 /* MKTopLyrics.m in Sources */,
+				BA0D3329184BB033003E461F /* MKUrls.m in Sources */,
 				BA23BF581842A38D0042A144 /* MKRank.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

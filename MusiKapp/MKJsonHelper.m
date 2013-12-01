@@ -24,16 +24,16 @@
     }
     
     // Acessando o elemento "data" da estrutura retornada pelo serviço.
-    NSDictionary *respostaJSON = [NSJSONSerialization JSONObjectWithData:resultado options:kNilOptions error:nil];
+    //NSDictionary *respostaJSON = [NSJSONSerialization JSONObjectWithData:resultado options:kNilOptions error:nil];
     
     NSArray *retornoArray = nil;
     
     @try {
-        retornoArray = [MKJsonLib convertJsonToArray:respostaJSON withKey:key];
+        retornoArray = [MKJsonLib convertJsonToArray:resultado withKey:key];
     }
     @catch (NSException *exception) {
         NSLog(@"%@", exception.reason);
-    }    
+    }
     
     return retornoArray;
 }

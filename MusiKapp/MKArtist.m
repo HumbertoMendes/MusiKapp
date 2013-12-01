@@ -9,6 +9,7 @@
 #import "MKArtist.h"
 #import "MKJsonHelper.h"
 #import "MKJsonLib.h"
+#import "MKUrls.h"
 
 @implementation MKArtist
 @synthesize id;
@@ -30,18 +31,18 @@
 }
 
 -(NSArray*)searchForArtists:(NSString*)artistName{
-    artistName = [MKJsonLib formatParameterForUrl:artistName];
-    NSString *stringUrl = [NSString stringWithFormat:@"http://www.vagalume.com.br/api/search.php?art=%@&extra=artpic", artistName];
+    NSString *stringUrl = [MKUrls searchArtistUrl:artistName];
     return [MKJsonHelper searchRepository:stringUrl andKey:@"art"];
 }
 
 -(NSArray*)populateArtists:(NSArray*)artists{
     NSMutableArray *arrArtists = nil;
     if(artists != nil){
-        MKArtist *artist = [[MKArtist alloc] init];
+        MKArtist *artist = nil;
         arrArtists = [[NSMutableArray alloc] init];
         // Obtendo cada um dos monitoramentos retornados e preenchendo o array.
         for(NSDictionary *art in artists) {
+            artist = [[MKArtist alloc] init];
             artist.id = [art objectForKey:@"id"];
             artist.name = [art objectForKey:@"name"];
             artist.url = [art objectForKey:@"url"];

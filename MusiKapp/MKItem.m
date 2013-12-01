@@ -12,6 +12,26 @@
 @synthesize id;
 @synthesize desc;
 @synthesize url;
-@synthesize year;
-@synthesize label;
+@synthesize cover;
+@synthesize discs;
+
+-(NSArray*)populateItems:(NSArray*)items{
+    NSMutableArray *arrItems = nil;
+    if(items != nil){
+        MKItem *item = nil;
+        arrItems = [[NSMutableArray alloc] init];
+        // Obtendo cada um dos monitoramentos retornados e preenchendo o array.
+        for(NSDictionary *itm in items) {
+            item = [[MKItem alloc] init];
+            item.id = [itm objectForKey:@"id"];
+            item.desc = [itm objectForKey:@"desc"];
+            item.url = [itm objectForKey:@"url"];
+            item.cover = [itm objectForKey:@"cover"];
+            //TODO item.discs;
+            [arrItems addObject:item];
+        }
+    }
+    return arrItems;
+}
+
 @end

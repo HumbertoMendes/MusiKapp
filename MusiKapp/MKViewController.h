@@ -14,6 +14,5 @@
 @interface MKViewController : UIViewController<MKUISearchBarHelperDelegate>{
     MKUISearchBarHelper *searchBar;
 }
--(void)searchArtist;
 @property (strong, nonatomic) IBOutlet UISearchBar *sbSearchArtist;
 @end

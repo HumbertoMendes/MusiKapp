@@ -9,6 +9,7 @@
 #import "MKViewController.h"
 #import "MKUISearchBarHelper.h"
 #import "MKArtist.h"
+#import "MKAlbums.h"
 
 @interface MKViewController ()
 
@@ -30,10 +31,6 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)searchArtist{
-    
-}
-
 -(void)delegateSearchBar{
     MKArtist *artist = [MKArtist alloc];
     searchBar = [[MKUISearchBarHelper alloc] initWithRepository:artist];    
@@ -42,15 +39,24 @@
 
 -(void)returnedData:(NSArray*)artists{
     if(artists != nil){
-        /*for(MKArtist *artist in artists) {
-            NSLog(@"%@", artist.name);
-            NSLog(@"%@", artist.url);
-        }*/
         MKArtist *artist = (MKArtist*) [artists objectAtIndex:0];
+        [self performSelectorInBackground:@selector(searchAlbums:) withObject:artist.name];
         NSLog(@"%@", artist.name);
         NSLog(@"%@", artist.url);
     }else{
         NSLog(@"Artista não encontrado");
+    }
+}
+
+-(void)searchAlbums:(NSString*)artistName{
+    MKAlbums *albums = [MKAlbums alloc];
+    NSArray *arrAlbums = [albums searchRepository:artistName];
+    for(MKItem *item in [arrAlbums objectAtIndex:0]){
+        NSLog(@"-------------------");
+        NSLog(@"%@", item.id);
+        NSLog(@"%@", item.desc);
+        NSLog(@"%@", item.url);
+        NSLog(@"%@", item.cover);
     }
 }
 

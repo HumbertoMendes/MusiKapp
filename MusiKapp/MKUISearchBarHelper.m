@@ -14,7 +14,7 @@
 
 -(id)initWithRepository:(id<MKModelData>) initRepository{
     if(self=[super init]){
-        repository = initRepository;
+        modelData = initRepository;
     }
     return self;
 }
@@ -27,7 +27,7 @@
 };
 
 -(void)searchForData:(NSString*)text{
-    NSArray *arrayReturn = [repository searchRepository:text];
+    NSArray *arrayReturn = [modelData searchRepository:text];
     [delegate returnedData:arrayReturn];
 }
 

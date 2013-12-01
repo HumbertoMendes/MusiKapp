@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MKModelData.h"
 
-@interface MKAlbums : NSObject
-@property NSMutableArray* items;
+@interface MKAlbums : NSObject<MKModelData>
+@property NSArray* items;
 @end

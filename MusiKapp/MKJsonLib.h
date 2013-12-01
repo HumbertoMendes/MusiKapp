@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface MKJsonLib : NSObject
-+(NSArray*)convertJsonToArray:(NSDictionary*)data withKey:(NSString*)key;
++(NSArray*)convertJsonToArray:(NSData*)data withKey:(NSString*)key;
 +(NSString*)formatParameterForUrl:(NSString*)parameter;
++(NSString*)formatArtistNameForUrl:(NSString*)text;
++(NSString*)stringReplace:(NSString*)oldString withString:(NSString*)newString forText:(NSString*)text;
++(NSData*)convertJsonToData:(NSObject*)json;
 @end

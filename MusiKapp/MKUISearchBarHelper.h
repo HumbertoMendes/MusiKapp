@@ -13,7 +13,7 @@
 @end
 
 @interface MKUISearchBarHelper : NSObject<UISearchBarDelegate>{
-    id<MKModelData> repository;
+    id<MKModelData> modelData;
 }
 
 -(id)initWithRepository:(id<MKModelData>) initRepository;

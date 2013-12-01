@@ -12,6 +12,7 @@
 @property NSString* id;
 @property NSString* desc;
 @property NSString* url;
-@property NSString* year;
-@property NSString* label;
+@property NSString* cover;
+@property NSArray* discs;
+-(NSArray*)populateItems:(NSArray*)items;
 @end

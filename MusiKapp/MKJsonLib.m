@@ -9,20 +9,36 @@
 #import "MKJsonLib.h"
 
 @implementation MKJsonLib
-+(NSArray*)convertJsonToArray:(NSDictionary*)data withKey:(NSString*)key{
++(NSArray*)convertJsonToArray:(NSData*)data withKey:(NSString*)key{
+    // Acessando o elemento "data" da estrutura retornada pelo serviço.
+    NSDictionary *json = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];
+    
     NSMutableArray *jsonArray = [[NSMutableArray alloc] init];
     
-    id keyValue = [data objectForKey:key];
+    id keyValue = [json objectForKey:key];
     
     if ([keyValue isKindOfClass:[NSArray class]])
-        return [data objectForKey:key];
+        return [json objectForKey:key];
     else{
-        [jsonArray addObject:[data objectForKey:key]];
+        [jsonArray addObject:[json objectForKey:key]];
         return jsonArray;
     }
 }
 
 +(NSString*)formatParameterForUrl:(NSString*)parameter{
     return [parameter stringByAddingPercentEscapesUsingEncoding:NSASCIIStringEncoding];;
+}
+
++(NSString*)formatArtistNameForUrl:(NSString*)text{
+    text = [text lowercaseString];
+    return [self stringReplace:@" " withString:@"-" forText:text];
+}
+
++(NSString*)stringReplace:(NSString*)oldString withString:(NSString*)newString forText:(NSString*)text{
+    return [text stringByReplacingOccurrencesOfString:oldString withString:newString];
+}
+
++(NSData*)convertJsonToData:(NSObject*)json{
+    return [NSJSONSerialization dataWithJSONObject:json options:0 error:nil];
 }
 @end
