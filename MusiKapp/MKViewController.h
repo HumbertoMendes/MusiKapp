@@ -11,8 +11,10 @@
 #import "MKArtist.h"
 
 
-@interface MKViewController : UIViewController<MKUISearchBarHelperDelegate>{
+@interface MKViewController : UIViewController<MKUISearchBarHelperDelegate, UITableViewDataSource, UITableViewDelegate>{
     MKUISearchBarHelper *searchBar;
+    NSMutableArray *albumItems;
 }
 @property (strong, nonatomic) IBOutlet UISearchBar *sbSearchArtist;
+@property (weak, nonatomic) IBOutlet UITableView *tvAlbums;
 @end

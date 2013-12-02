@@ -11,4 +11,5 @@
 @interface MKUrls : NSObject
 +(NSString*)searchArtistUrl:(NSString*)artistName;
 +(NSString*)searchAlbumUrl:(NSString*)artistName;
++(NSString*)searchImageUrl:(NSString*)imageUrl;
 @end

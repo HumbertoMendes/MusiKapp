@@ -21,4 +21,9 @@
     NSString *url = @"http://www.vagalume.com.br/%@/discografia/index.js";
     return [NSString stringWithFormat: url, artistName];
 }
+
++(NSString*)searchImageUrl:(NSString*)imageUrl{
+    NSString *url = @"http://www.vagalume.com.br%@";
+    return [NSString stringWithFormat: url, imageUrl];
+}
 @end
