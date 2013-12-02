@@ -30,8 +30,7 @@
 }
 
 +(NSString*)formatArtistNameForUrl:(NSString*)text{
-    text = [text lowercaseString];
-    return [self stringReplace:@"http://www.vagalume.com.br/" withString:@"" forText:text];
+   return [self stringReplace:@"http://www.vagalume.com.br/" withString:@"" forText:text];
 }
 
 +(NSString*)stringReplace:(NSString*)oldString withString:(NSString*)newString forText:(NSString*)text{
