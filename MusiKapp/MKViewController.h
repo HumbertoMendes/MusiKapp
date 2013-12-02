@@ -17,4 +17,5 @@
 }
 @property (strong, nonatomic) IBOutlet UISearchBar *sbSearchArtist;
 @property (weak, nonatomic) IBOutlet UITableView *tvAlbums;
+@property (weak, nonatomic) IBOutlet UILabel *lbNomeArtista;
 @end

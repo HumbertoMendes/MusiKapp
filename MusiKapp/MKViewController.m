@@ -45,12 +45,17 @@
     if(artists != nil){
         MKArtist *artist = (MKArtist*) [artists objectAtIndex:0];
         [self performSelectorInBackground:@selector(searchAlbums:) withObject:artist.url];
-        NSLog(@"%@", artist.name);
-        NSLog(@"%@", artist.url);
+        _lbNomeArtista.text = artist.name;
+        //NSLog(@"%@", artist.name);
+        //NSLog(@"%@", artist.url);
     }else{
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Atenção" message:@"Artista não encontrado." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
         [alert show];
     }
+    //TODO: Encapsular em um método.
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self.view endEditing:YES];
+    });
 }
 
 -(void)searchAlbums:(NSString*)artistUrl{
@@ -76,8 +81,9 @@
     }
     MKItem *item = (MKItem*)[albumItems objectAtIndex:indexPath.row];
     
-    //TODO Desacoplar requisição
-    //TODO Fazer cache
+    //TODO: Desacoplar requisição
+    //TODO: Fazer cache
+    //TODO: Inserir capa caso a mesma não exista
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH,  0ul);
     dispatch_async(queue, ^{
         NSString *url = [MKUrls searchImageUrl:item.cover];
