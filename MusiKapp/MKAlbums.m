@@ -19,8 +19,8 @@
     return [self populateAlbum:albums];
 }
 
--(NSArray*)searchForAlbums:(NSString*)artistName{
-    NSString *stringUrl = [MKUrls searchAlbumUrl:artistName];
+-(NSArray*)searchForAlbums:(NSString*)artistUrl{
+    NSString *stringUrl = [MKUrls searchAlbumUrl:artistUrl];
     return [MKJsonHelper searchRepository:stringUrl andKey:@"discography"];
 }
 
