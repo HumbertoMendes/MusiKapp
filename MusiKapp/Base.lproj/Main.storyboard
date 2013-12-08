@@ -61,7 +61,7 @@
                             <outlet property="delegate" destination="pGg-6v-bdr" id="Y6K-Cp-Qkv"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Master" id="tQt-TN-PWz"/>
+                    <navigationItem key="navigationItem" title="Artista" id="tQt-TN-PWz"/>
                     <connections>
                         <outlet property="sbSearchArtist" destination="HZj-1j-jWi" id="QXV-Tq-VKA"/>
                         <outlet property="tvAlbums" destination="mLL-gJ-YKr" id="Rxm-SE-8FQ"/>
@@ -97,13 +97,13 @@
                             <outlet property="delegate" destination="Ah7-4n-0Wa" id="liW-Je-mwz"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Detail" id="cra-N8-TIN"/>
+                    <navigationItem key="navigationItem" title="Albums" id="cra-N8-TIN"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lrm-kH-fPn" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="902" y="64"/>
         </scene>
-        <!--Letra View Controller-->
+        <!--Letra View Controller - Letra-->
         <scene sceneID="Dw7-pw-Age">
             <objects>
                 <viewController id="y4s-LJ-kE5" customClass="MKLetraViewController" sceneMemberID="viewController">
@@ -133,7 +133,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="CsK-Cl-IMf"/>
+                    <navigationItem key="navigationItem" title="Letra" id="CsK-Cl-IMf"/>
                     <connections>
                         <outlet property="lbNomeMusica" destination="KYf-86-Tmb" id="cZR-jl-Z6c"/>
                         <outlet property="tvLetraMusica" destination="t5b-c7-I4A" id="u1t-X7-zrS"/>
