@@ -38,6 +38,15 @@
 		4D0D8545185352390052B572 /* MKJsonLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D8544185352390052B572 /* MKJsonLib.m */; };
 		4D0D8548185359180052B572 /* MKDiscs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D8547185359180052B572 /* MKDiscs.m */; };
 		4DA58ADE185393E30040ACFB /* MKLetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA58ADD185393E30040ACFB /* MKLetraViewController.m */; };
+		4DE047461854D43D00728BCF /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE047451854D43D00728BCF /* Default.png */; };
+		4DE0474A1854D4CB00728BCF /* Default(@2x).png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE047491854D4CB00728BCF /* Default(@2x).png */; };
+		4DE047501854D6C300728BCF /* Icon-72(@2x).png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0474B1854D6C300728BCF /* Icon-72(@2x).png */; };
+		4DE047511854D6C300728BCF /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0474C1854D6C300728BCF /* Icon.png */; };
+		4DE047521854D6C300728BCF /* Icon(@2x).png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0474D1854D6C300728BCF /* Icon(@2x).png */; };
+		4DE047531854D6C300728BCF /* iTunesArtwork.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0474E1854D6C300728BCF /* iTunesArtwork.png */; };
+		4DE047541854D6C300728BCF /* iTunesArtwork(@2x).png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE0474F1854D6C300728BCF /* iTunesArtwork(@2x).png */; };
+		4DE047561854D70D00728BCF /* Icon120.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE047551854D70D00728BCF /* Icon120.png */; };
+		4DE047581854D73100728BCF /* Icon80.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE047571854D73100728BCF /* Icon80.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +110,15 @@
 		4D0D8547185359180052B572 /* MKDiscs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKDiscs.m; sourceTree = "<group>"; };
 		4DA58ADC185393E30040ACFB /* MKLetraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLetraViewController.h; sourceTree = "<group>"; };
 		4DA58ADD185393E30040ACFB /* MKLetraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKLetraViewController.m; sourceTree = "<group>"; };
+		4DE047451854D43D00728BCF /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		4DE047491854D4CB00728BCF /* Default(@2x).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default(@2x).png"; sourceTree = "<group>"; };
+		4DE0474B1854D6C300728BCF /* Icon-72(@2x).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72(@2x).png"; sourceTree = "<group>"; };
+		4DE0474C1854D6C300728BCF /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4DE0474D1854D6C300728BCF /* Icon(@2x).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon(@2x).png"; sourceTree = "<group>"; };
+		4DE0474E1854D6C300728BCF /* iTunesArtwork.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iTunesArtwork.png; sourceTree = "<group>"; };
+		4DE0474F1854D6C300728BCF /* iTunesArtwork(@2x).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iTunesArtwork(@2x).png"; sourceTree = "<group>"; };
+		4DE047551854D70D00728BCF /* Icon120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon120.png; sourceTree = "<group>"; };
+		4DE047571854D73100728BCF /* Icon80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon80.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +204,15 @@
 		4D0D84EB1853505A0052B572 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4DE047571854D73100728BCF /* Icon80.png */,
+				4DE047551854D70D00728BCF /* Icon120.png */,
+				4DE0474B1854D6C300728BCF /* Icon-72(@2x).png */,
+				4DE0474C1854D6C300728BCF /* Icon.png */,
+				4DE0474D1854D6C300728BCF /* Icon(@2x).png */,
+				4DE0474E1854D6C300728BCF /* iTunesArtwork.png */,
+				4DE0474F1854D6C300728BCF /* iTunesArtwork(@2x).png */,
+				4DE047491854D4CB00728BCF /* Default(@2x).png */,
+				4DE047451854D43D00728BCF /* Default.png */,
 				4D0D84EC1853505A0052B572 /* MusiKapp-Info.plist */,
 				4D0D84ED1853505A0052B572 /* InfoPlist.strings */,
 				4D0D84F01853505A0052B572 /* main.m */,
@@ -343,8 +370,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D0D85031853505A0052B572 /* Images.xcassets in Resources */,
+				4DE0474A1854D4CB00728BCF /* Default(@2x).png in Resources */,
 				4D0D84EF1853505A0052B572 /* InfoPlist.strings in Resources */,
+				4DE047501854D6C300728BCF /* Icon-72(@2x).png in Resources */,
+				4DE047541854D6C300728BCF /* iTunesArtwork(@2x).png in Resources */,
+				4DE047521854D6C300728BCF /* Icon(@2x).png in Resources */,
+				4DE047581854D73100728BCF /* Icon80.png in Resources */,
 				4D0D84F81853505A0052B572 /* Main.storyboard in Resources */,
+				4DE047561854D70D00728BCF /* Icon120.png in Resources */,
+				4DE047531854D6C300728BCF /* iTunesArtwork.png in Resources */,
+				4DE047511854D6C300728BCF /* Icon.png in Resources */,
+				4DE047461854D43D00728BCF /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,8 +541,6 @@
 		4D0D851B1853505A0052B572 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MusiKapp/MusiKapp-Prefix.pch";
 				INFOPLIST_FILE = "MusiKapp/MusiKapp-Info.plist";
@@ -518,8 +552,6 @@
 		4D0D851C1853505A0052B572 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MusiKapp/MusiKapp-Prefix.pch";
 				INFOPLIST_FILE = "MusiKapp/MusiKapp-Info.plist";
