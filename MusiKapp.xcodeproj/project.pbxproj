@@ -182,21 +182,19 @@
 			isa = PBXGroup;
 			children = (
 				4D0D8523185350A00052B572 /* Helpers */,
-				4D0D8522185350950052B572 /* Protocols */,
-				4D0D8521185350800052B572 /* Models */,
 				4D0D85201853506B0052B572 /* Libs */,
+				4D0D8521185350800052B572 /* Models */,
+				4D0D85021853505A0052B572 /* Images.xcassets */,
+				4D0D84F61853505A0052B572 /* Main.storyboard */,
 				4D0D84F31853505A0052B572 /* MKAppDelegate.h */,
 				4D0D84F41853505A0052B572 /* MKAppDelegate.m */,
-				4D0D84F61853505A0052B572 /* Main.storyboard */,
-				4D0D84FC1853505A0052B572 /* MKMasterViewController.h */,
-				4D0D84FD1853505A0052B572 /* MKMasterViewController.m */,
 				4D0D84FF1853505A0052B572 /* MKDetailViewController.h */,
 				4D0D85001853505A0052B572 /* MKDetailViewController.m */,
-				4D0D85021853505A0052B572 /* Images.xcassets */,
-				4D0D84F91853505A0052B572 /* MusiKapp.xcdatamodeld */,
-				4D0D84EB1853505A0052B572 /* Supporting Files */,
 				4DA58ADC185393E30040ACFB /* MKLetraViewController.h */,
 				4DA58ADD185393E30040ACFB /* MKLetraViewController.m */,
+				4D0D84FC1853505A0052B572 /* MKMasterViewController.h */,
+				4D0D84FD1853505A0052B572 /* MKMasterViewController.m */,
+				4D0D84F91853505A0052B572 /* MusiKapp.xcdatamodeld */,
 			);
 			path = MusiKapp;
 			sourceTree = "<group>";
@@ -269,6 +267,8 @@
 				4D0D853A185351710052B572 /* MKTopLyrics.m */,
 				4D0D8546185359180052B572 /* MKDiscs.h */,
 				4D0D8547185359180052B572 /* MKDiscs.m */,
+				4D0D8522185350950052B572 /* Protocols */,
+				4D0D84EB1853505A0052B572 /* Supporting Files */,
 			);
 			name = Models;
 			sourceTree = "<group>";

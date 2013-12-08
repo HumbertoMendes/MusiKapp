@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MKItem.h"
 
-@interface MKDetailViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
+@interface MKDetailViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 {
     NSArray *arrayMusicas;
 }
