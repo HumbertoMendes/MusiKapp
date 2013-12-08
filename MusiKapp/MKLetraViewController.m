@@ -7,7 +7,7 @@
 //
 
 #import "MKLetraViewController.h"
-#import "MKTopLyrics.h"
+#import "MKLyrics.h"
 #import "MKUrls.h"
 
 @interface MKLetraViewController ()
@@ -27,13 +27,20 @@
     return self;
 }
 
+- (void)setDetailItem:(NSString*)newDetailItem
+{
+    idMusica = newDetailItem;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	
-    MKTopLyrics *musica = [MKTopLyrics alloc];
-    NSString *url = [MKUrls searchMusicUrl:idMusica];
-    MKTopLyrics *musicaCompleta = [musica searchForMusic:url];
+    MKLyrics *musica = [MKLyrics alloc];
+    musica = [musica searchRepository:idMusica];
+    _lbNomeMusica.text = musica.name;
+    _tvLetraMusica.text = musica.text;
+    
 }
 
 - (void)didReceiveMemoryWarning

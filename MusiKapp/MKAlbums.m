@@ -13,9 +13,9 @@
 #import "MKJsonLib.h"
 
 @implementation MKAlbums
--(NSArray*)searchRepository:(NSString *)text{
+-(NSArray*)searchRepository:(NSString *)searchText{
     //http://www.vagalume.com.br/u2/index.js
-    NSArray *albums = [self searchForAlbums:text];
+    NSArray *albums = [self searchForAlbums:searchText];
     return [self populateAlbum:albums];
 }
 

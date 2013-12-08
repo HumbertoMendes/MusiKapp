@@ -8,6 +8,7 @@
 
 #import "MKDetailViewController.h"
 #import "MKDiscs.h"
+#import "MKLetraViewController.h"
 
 @interface MKDetailViewController ()
 - (void)configureView;
@@ -80,10 +81,10 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
+    if ([[segue identifier] isEqualToString:@"showLetra"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         MKItem *object = [arrayMusicas objectAtIndex:indexPath.row];
-        [[segue destinationViewController] setDetailItem:object];
+        [[segue destinationViewController] setDetailItem:object.id];
     }
 }
 

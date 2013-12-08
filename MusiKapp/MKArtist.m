@@ -24,9 +24,9 @@
 @synthesize topLyrics;
 @synthesize albums;
 
--(NSArray*)searchRepository:(NSString *)text{
+-(NSArray*)searchRepository:(NSString *)searchText{
     //http://www.vagalume.com.br/u2/index.js
-    NSArray *artists = [self searchForArtists:text];
+    NSArray *artists = [self searchForArtists:searchText];
     return [self populateArtists:artists];
 }
 

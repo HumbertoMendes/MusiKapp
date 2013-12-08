@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @protocol MKModelData <NSObject>
--(NSArray*)searchRepository:(NSString*)text;
+//Definir searchRepository como static
+-(id)searchRepository:(NSString*)searchText;
 @end

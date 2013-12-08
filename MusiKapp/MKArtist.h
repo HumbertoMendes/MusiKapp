@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "MKRank.h"
 #import "MKGenre.h"
-#import "MKTopLyrics.h"
+#import "MKLyrics.h"
 #import "MKAlbums.h"
 #import "MKModelData.h"
 
@@ -23,6 +23,6 @@
 @property MKRank* rank;
 @property MKGenre* genre;
 @property NSMutableArray* related;
-@property MKTopLyrics* topLyrics;
+@property MKLyrics* topLyrics;
 @property MKAlbums* albums;
 @end

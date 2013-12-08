@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MKLetraViewController : UIViewController
-
-@property (nonatomic,retain)NSString *idMusica;
-
+@property (nonatomic,retain) NSString *idMusica;
+@property (weak, nonatomic) IBOutlet UILabel *lbNomeMusica;
+@property (weak, nonatomic) IBOutlet UITextView *tvLetraMusica;
 @end

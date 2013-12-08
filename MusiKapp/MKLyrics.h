@@ -8,13 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "MKItem.h"
+#import "MKModelData.h"
 
-@interface MKTopLyrics : NSObject
+@interface MKLyrics : NSObject<MKModelData>
 @property NSString* id;
 @property NSString* name;
 @property NSString* text;
 
--(NSArray*)searchForMusic:(NSString*)musicId;
--(NSArray*)populateItems:(NSArray*)items;
+-(MKLyrics*)searchRepository:(NSString*)idMusica;
+-(MKLyrics*)populateItems:(NSArray*)items;
 
 @end

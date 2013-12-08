@@ -34,7 +34,7 @@
 		4D0D853F185351710052B572 /* MKUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D8534185351710052B572 /* MKUrls.m */; };
 		4D0D8540185351710052B572 /* MKGenre.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D8536185351710052B572 /* MKGenre.m */; };
 		4D0D8541185351710052B572 /* MKRank.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D8538185351710052B572 /* MKRank.m */; };
-		4D0D8542185351710052B572 /* MKTopLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D853A185351710052B572 /* MKTopLyrics.m */; };
+		4D0D8542185351710052B572 /* MKLyrics.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D853A185351710052B572 /* MKLyrics.m */; };
 		4D0D8545185352390052B572 /* MKJsonLib.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D8544185352390052B572 /* MKJsonLib.m */; };
 		4D0D8548185359180052B572 /* MKDiscs.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D0D8547185359180052B572 /* MKDiscs.m */; };
 		4DA58ADE185393E30040ACFB /* MKLetraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DA58ADD185393E30040ACFB /* MKLetraViewController.m */; };
@@ -102,8 +102,8 @@
 		4D0D8536185351710052B572 /* MKGenre.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKGenre.m; sourceTree = "<group>"; };
 		4D0D8537185351710052B572 /* MKRank.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKRank.h; sourceTree = "<group>"; };
 		4D0D8538185351710052B572 /* MKRank.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKRank.m; sourceTree = "<group>"; };
-		4D0D8539185351710052B572 /* MKTopLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKTopLyrics.h; sourceTree = "<group>"; };
-		4D0D853A185351710052B572 /* MKTopLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKTopLyrics.m; sourceTree = "<group>"; };
+		4D0D8539185351710052B572 /* MKLyrics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKLyrics.h; sourceTree = "<group>"; };
+		4D0D853A185351710052B572 /* MKLyrics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKLyrics.m; sourceTree = "<group>"; };
 		4D0D8543185352390052B572 /* MKJsonLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKJsonLib.h; sourceTree = "<group>"; };
 		4D0D8544185352390052B572 /* MKJsonLib.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MKJsonLib.m; sourceTree = "<group>"; };
 		4D0D8546185359180052B572 /* MKDiscs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MKDiscs.h; sourceTree = "<group>"; };
@@ -263,8 +263,8 @@
 				4D0D8536185351710052B572 /* MKGenre.m */,
 				4D0D8537185351710052B572 /* MKRank.h */,
 				4D0D8538185351710052B572 /* MKRank.m */,
-				4D0D8539185351710052B572 /* MKTopLyrics.h */,
-				4D0D853A185351710052B572 /* MKTopLyrics.m */,
+				4D0D8539185351710052B572 /* MKLyrics.h */,
+				4D0D853A185351710052B572 /* MKLyrics.m */,
 				4D0D8546185359180052B572 /* MKDiscs.h */,
 				4D0D8547185359180052B572 /* MKDiscs.m */,
 				4D0D8522185350950052B572 /* Protocols */,
@@ -399,7 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D0D8542185351710052B572 /* MKTopLyrics.m in Sources */,
+				4D0D8542185351710052B572 /* MKLyrics.m in Sources */,
 				4D0D853E185351710052B572 /* MKItem.m in Sources */,
 				4D0D8540185351710052B572 /* MKGenre.m in Sources */,
 				4D0D853F185351710052B572 /* MKUrls.m in Sources */,

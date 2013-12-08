@@ -6,17 +6,17 @@
 //  Copyright (c) 2013 Humberto Mendes. All rights reserved.
 //
 
-#import "MKTopLyrics.h"
+#import "MKLyrics.h"
 #import "MKJsonHelper.h"
 #import "MKUrls.h"
 
-@implementation MKTopLyrics
+@implementation MKLyrics
 
 @synthesize id,name,text;
 
--(NSArray*)searchRepository:(NSString *)idMusica{
+-(MKLyrics*)searchRepository:(NSString *)searchText{
     //http://www.vagalume.com.br/u2/index.js
-    NSArray *music = [self searchForMusic:idMusica];
+    NSArray *music = [self searchForMusic:searchText];
     return [self populateItems:music];
 }
 
@@ -25,16 +25,15 @@
     return [MKJsonHelper searchRepository:stringUrl andKey:@"mus"];
 }
 
--(MKTopLyrics*)populateItems:(NSArray*)items{
+-(MKLyrics*)populateItems:(NSArray*)items{
     NSMutableArray *arrItems = nil;
-    MKTopLyrics *item = nil;
     
     if(items != nil){
-        MKTopLyrics *item = nil;
+        MKLyrics *item = nil;
         arrItems = [[NSMutableArray alloc] init];
         // Obtendo cada um dos monitoramentos retornados e preenchendo o array.
         for(NSDictionary *itm in items) {
-            item = [[MKTopLyrics alloc] init];
+            item = [[MKLyrics alloc] init];
             item.id = [itm objectForKey:@"id"];
             item.name = [itm objectForKey:@"name"];
             item.text = [itm objectForKey:@"text"];
@@ -43,7 +42,7 @@
         }
     }
     
-    return item;
+    return [arrItems objectAtIndex:0];
 }
 
 @end
