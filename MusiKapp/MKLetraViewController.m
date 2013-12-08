@@ -40,6 +40,7 @@
     musica = [musica searchRepository:idMusica];
     _lbNomeMusica.text = musica.name;
     _tvLetraMusica.text = musica.text;
+    [_tvLetraMusica sizeToFit];
     
 }
 
